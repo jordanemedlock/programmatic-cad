@@ -3,7 +3,7 @@ module Main where
 import Graphics.Implicit
 
 letter height 'J' = semi
-  where semi = difference [ring ir or, rectR 0 (-or, -or) (or, -or)]
+  where semi = union [ring ir or, rectR 0 (-or, -or) (or, -or)]
         width = height
         strokeWidth = width / 10
         innerDiameter = width/2 - strokeWidth
